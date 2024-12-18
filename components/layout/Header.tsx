@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import {
   AppBar,
@@ -15,7 +14,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { UserButton, useUser } from "@clerk/nextjs";
 import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
 
 const pages = [{ title: "Todos", href: "/todos" }];
 

@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "airbnb",
     "plugin:react/recommended",
@@ -16,7 +17,8 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    quotes: ["error", "double"],
+    quotes: ["error", "single"],
+    "linebreak-style": ["error", "lf"],
     "react/jsx-filename-extension": [
       1,
       { extensions: [".js", ".jsx", ".ts", ".tsx"] },
